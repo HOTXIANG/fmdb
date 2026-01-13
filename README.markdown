@@ -91,7 +91,7 @@ Use FMDB in target dependencies
 If you want to use [SQLCipher](https://www.zetetic.net/sqlcipher/) with FMDB Swift Package you can specify the `SQLCipher` trait when consuming FMDB Swift Package.
 
 ```swift
-depdencies: [
+depedencies: [
   .package(url: "https://github.com/ccgus/fmdb", from: "2.7.12", traits: ["SQLCipher"])
 ]
 ```
