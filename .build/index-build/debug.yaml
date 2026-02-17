@@ -1,0 +1,22 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "FMDB-arm64-apple-macosx26.0-debug.module": ["<FMDB-arm64-apple-macosx26.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": []
+  "test": []
+default: "main"
+nodes:
+  "/Users/hotxiang/Coding/mumble-iphoneos/Dependencies/fmdb/src/fmdb/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/hotxiang/Coding/mumble-iphoneos/Dependencies/fmdb/src/fmdb/","/Users/hotxiang/Coding/mumble-iphoneos/Dependencies/fmdb/Package.swift","/Users/hotxiang/Coding/mumble-iphoneos/Dependencies/fmdb/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

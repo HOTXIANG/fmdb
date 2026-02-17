@@ -1,0 +1,4 @@
+module FMDB {
+    umbrella header "/Users/hotxiang/Coding/mumble-iphoneos/Dependencies/fmdb/src/fmdb/FMDB.h"
+    export *
+}
