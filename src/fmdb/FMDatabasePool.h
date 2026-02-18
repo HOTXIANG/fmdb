@@ -1,3 +1,6 @@
+#ifndef FMDB_DATABASE_POOL_H
+#define FMDB_DATABASE_POOL_H
+
 //
 //  FMDatabasePool.h
 //  fmdb
@@ -278,3 +281,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* FMDB_DATABASE_POOL_H */

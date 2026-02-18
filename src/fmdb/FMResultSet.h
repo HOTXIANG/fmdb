@@ -1,3 +1,6 @@
+#ifndef FMDB_RESULT_SET_H
+#define FMDB_RESULT_SET_H
+
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -536,3 +539,5 @@ If you don't, you're going to be in a world of hurt when you try and use the dat
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* FMDB_RESULT_SET_H */

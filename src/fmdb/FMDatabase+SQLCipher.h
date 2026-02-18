@@ -1,3 +1,6 @@
+#ifndef FMDB_DATABASE_SQLCIPHER_H
+#define FMDB_DATABASE_SQLCIPHER_H
+
 //
 //  FMDatabase+SQLCipher.h
 //  FMDB
@@ -5,12 +8,15 @@
 //  Created by Micah T. Moore on 9/29/25.
 //
 
-#if __has_include(<fmdb/FMDatabase.h>)
-#import <fmdb/FMDatabase.h>
-#elif __has_include(<FMDB/FMDatabase.h>)
-#import <FMDB/FMDatabase.h>
-#else
+#if defined(__clang__)
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wquoted-include-in-framework-header"
+#endif
+
 #import "FMDatabase.h"
+
+#if defined(__clang__)
+#pragma clang diagnostic pop
 #endif
 
 NS_ASSUME_NONNULL_BEGIN
@@ -142,3 +148,5 @@ typedef enum : NSUInteger {
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* FMDB_DATABASE_SQLCIPHER_H */

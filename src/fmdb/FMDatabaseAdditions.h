@@ -1,3 +1,6 @@
+#ifndef FMDB_DATABASE_ADDITIONS_H
+#define FMDB_DATABASE_ADDITIONS_H
+
 //
 //  FMDatabaseAdditions.h
 //  fmdb
@@ -7,12 +10,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#if __has_include(<fmdb/FMDatabase.h>)
-#import <fmdb/FMDatabase.h>
-#elif __has_include(<FMDB/FMDatabase.h>)
-#import <FMDB/FMDatabase.h>
-#else
+
+#if defined(__clang__)
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wquoted-include-in-framework-header"
+#endif
+
 #import "FMDatabase.h"
+
+#if defined(__clang__)
+#pragma clang diagnostic pop
 #endif
 
 NS_ASSUME_NONNULL_BEGIN
@@ -247,3 +254,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* FMDB_DATABASE_ADDITIONS_H */
