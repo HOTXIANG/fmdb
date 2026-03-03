@@ -7,3 +7,10 @@ fmdb.xcodeproj/*.mode1v3
 *.xcodeproj/project.xcworkspace/xcuserdata/
 fmdb.xcodeproj/project.xcworkspace
 .swiftpm
+
+# SwiftPM/Xcode index build artifacts
+.build/
+.build/index-build/
+.build/**/ModuleCache/
+.build/**/*.pcm
+.build/**/build.db
