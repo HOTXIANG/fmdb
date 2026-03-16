@@ -200,6 +200,8 @@
 		CCC24EC00A13E34D00A6D3E3 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = SOURCE_ROOT; };
 		CCF9B96E2B1539EE0023EB4C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = privacy/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		EE4290EF12B42F870088BD94 /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F209E87B2F6885380015071A /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = fmdb.xcodeproj; sourceTree = "<group>"; };
+		F209E87C2F6885380015071A /* MumbleKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MumbleKit.xcodeproj; path = ../../MumbleKit/MumbleKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +286,7 @@
 				BF5D041718416BB2008C5AA9 /* Frameworks */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 				A08C6BBA2AF0F5B1004F3F28 /* FMDB iOS copy-Info.plist */,
+				F209E87D2F6885380015071A /* Dependencies */,
 			);
 			name = fmdb;
 			sourceTree = "<group>";
@@ -430,6 +433,15 @@
 				6767F81519AD13C300887DBC /* fts3 */,
 			);
 			name = "optional extras";
+			sourceTree = "<group>";
+		};
+		F209E87D2F6885380015071A /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				F209E87B2F6885380015071A /* fmdb.xcodeproj */,
+				F209E87C2F6885380015071A /* MumbleKit.xcodeproj */,
+			);
+			name = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
