@@ -117,6 +117,20 @@
 			remoteGlobalIDString = 83C73F0A1C326ADA00FFC730;
 			remoteInfo = "FMDB MacOS";
 		};
+		F2F432492F6BEF66002E7713 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F209E87C2F6885380015071A /* MumbleKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 28BCF2C1132AE3B40003AEC1;
+			remoteInfo = "MumbleKit (iOS)";
+		};
+		F2F4324B2F6BEF66002E7713 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F209E87C2F6885380015071A /* MumbleKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2845A71A132D9B2F0034D631;
+			remoteInfo = "MumbleKit (Mac)";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -444,6 +458,20 @@
 			name = Dependencies;
 			sourceTree = "<group>";
 		};
+		F2F432452F6BEF66002E7713 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2F4324A2F6BEF66002E7713 /* libMumbleKit.a */,
+				F2F4324C2F6BEF66002E7713 /* MumbleKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2F4324D2F6BEF66002E7713 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -701,6 +729,16 @@
 			);
 			mainGroup = 08FB7794FE84155DC02AAC07 /* fmdb */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F2F4324D2F6BEF66002E7713 /* Products */;
+					ProjectRef = F209E87B2F6885380015071A /* fmdb.xcodeproj */;
+				},
+				{
+					ProductGroup = F2F432452F6BEF66002E7713 /* Products */;
+					ProjectRef = F209E87C2F6885380015071A /* MumbleKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8DD76F960486AA7600D96B5E /* fmdb */,
@@ -714,6 +752,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F2F4324A2F6BEF66002E7713 /* libMumbleKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMumbleKit.a;
+			remoteRef = F2F432492F6BEF66002E7713 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F2F4324C2F6BEF66002E7713 /* MumbleKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MumbleKit.framework;
+			remoteRef = F2F4324B2F6BEF66002E7713 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2CD242691FCC09CA00479FDE /* Resources */ = {
