@@ -262,7 +262,7 @@ NS_ASSUME_NONNULL_END
     
     do {
         retry   = NO;
-        rc      = sqlite3_close(_db);
+        rc      = sqlite3_close_v2(_db);
         if (SQLITE_BUSY == rc || SQLITE_LOCKED == rc) {
             if (!triedFinalizingOpenStatements) {
                 triedFinalizingOpenStatements = YES;
